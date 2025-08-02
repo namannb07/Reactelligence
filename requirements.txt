@@ -1,0 +1,11 @@
+streamlit
+transformers
+torch
+rdkit-pypi
+googletrans==4.0.0rc1
+matplotlib
+seaborn
+networkx
+pandas
+numpy
+pillow
