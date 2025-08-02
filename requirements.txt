@@ -1,7 +1,7 @@
 streamlit
 transformers
 torch
-rdkit-pypi
+rdkit>=2023.9.1
 googletrans==4.0.0rc1
 matplotlib
 seaborn
