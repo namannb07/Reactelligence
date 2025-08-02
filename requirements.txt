@@ -6,6 +6,6 @@ matplotlib
 networkx
 plotly
 transformers
-googletrans==4.0.0-rc1
+googletrans-py
 requests
 torch
