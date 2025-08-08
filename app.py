@@ -38,6 +38,8 @@ st.markdown("""
         margin-bottom: 2rem;
         box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         animation: gradientShift 8s ease-in-out infinite;
+        transition: all 1s ease-in-out;
+
     }
     
     @keyframes gradientShift {
