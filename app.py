@@ -25,12 +25,12 @@ st.set_page_config(
 # Custom CSS for enhanced UI
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&family=Teko:wght@400;500;700&display=swap');
 
-   * {
-     font-family: 'Audiowide', sans-serif;
+
+   *{
+     font-family: 'Exo 2', sans-serif;
     }
-
     
     .main-header {
     /* Use CSS variables for smooth color interpolation */
