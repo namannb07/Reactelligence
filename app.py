@@ -32,20 +32,39 @@ st.markdown("""
     }
     
     .main-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-        padding: 2rem;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        animation: gradientShift 8s ease-in-out infinite;
-        transition: all 1s ease-in-out;
+    /* Use CSS variables for smooth color interpolation */
+    --c1: #667eea;
+    --c2: #764ba2;
+    --c3: #f093fb;
 
+    background: linear-gradient(270deg, var(--c1), var(--c2), var(--c3));
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite, gradientColors 8s ease-in-out infinite;
+
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+@keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientColors {
+    0%, 100% {
+        --c1: #667eea;
+        --c2: #764ba2;
+        --c3: #f093fb;
     }
-    
-    @keyframes gradientShift {
-        0%, 100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); }
-        50% { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+    50% {
+        --c1: #f093fb;
+        --c2: #f5576c;
+        --c3: #4facfe;
     }
+}
     
     .main-header h1 {
         color: white;
