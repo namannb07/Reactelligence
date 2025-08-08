@@ -50,7 +50,7 @@ st.markdown("""
         text-align: center;
         margin: 0;
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
     
