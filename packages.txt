@@ -1,1 +1,4 @@
-python3.10
+libxrender1
+libxext6
+libsm6
+libxkbcommon0
