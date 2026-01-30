@@ -239,9 +239,7 @@ class ChemBERTaPredictor:
             return self._fallback_predictions(smiles)
 
     def _embeddings_to_predictions(self, embeddings, smiles):
-        """Convert embeddings to property predictions"""
-        # This is a simplified approach - in practice you'd train regression heads
-        # For now, we'll use RDKit + some AI-inspired modifications
+        """Converting embeddings to property predictions"""
         
         mol = Chem.MolFromSmiles(smiles)
         if mol is None:
